@@ -9,7 +9,7 @@
   "updateable": true,
   "privileged": false,
   "interface_port": 3306,
-  "documentation": "https://github.com/community-scripts/ProxmoxVE/discussions/192",
+  "documentation": "https://github.com/mrinmaydhar/ProxmoxVE/discussions/192",
   "website": "https://mariadb.org/",
   "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/mariadb.webp",
   "config_path": "",
@@ -52,5 +52,5 @@
       "type": "info"
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

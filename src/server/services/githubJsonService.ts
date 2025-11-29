@@ -216,7 +216,7 @@ export class GitHubJsonService {
       const script = JSON.parse(content) as Script;
       
       // If script doesn't have repository_url, set it to main repo (for backward compatibility)
-      script.repository_url ??= env.REPO_URL ?? 'https://github.com/community-scripts/ProxmoxVE';
+      script.repository_url ??= env.REPO_URL ?? 'https://github.com/mrinmaydhar/ProxmoxVE';
       
       // Cache the script
       this.scriptCache.set(slug, script);
@@ -356,7 +356,7 @@ export class GitHubJsonService {
     try {
       this.initializeConfig();
       const files = await this.getLocalJsonFiles();
-      const mainRepoUrl = env.REPO_URL ?? 'https://github.com/community-scripts/ProxmoxVE';
+      const mainRepoUrl = env.REPO_URL ?? 'https://github.com/mrinmaydhar/ProxmoxVE';
       
       for (const file of files) {
         try {

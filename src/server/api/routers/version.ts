@@ -53,7 +53,7 @@ export const versionRouter = createTRPCRouter({
   getLatestRelease: publicProcedure
     .query(async () => {
       try {
-        const response = await fetchGitHubAPI('https://api.github.com/repos/community-scripts/ProxmoxVE-Local/releases/latest');
+        const response = await fetchGitHubAPI('https://api.github.com/repos/mrinmaydhar/ProxmoxVE-Local/releases/latest');
         
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.status}`);
@@ -89,7 +89,7 @@ export const versionRouter = createTRPCRouter({
         const currentVersion = (await readFile(versionPath, 'utf-8')).trim();
         
 
-        const response = await fetchGitHubAPI('https://api.github.com/repos/community-scripts/ProxmoxVE-Local/releases/latest');
+        const response = await fetchGitHubAPI('https://api.github.com/repos/mrinmaydhar/ProxmoxVE-Local/releases/latest');
         
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.status}`);
@@ -133,7 +133,7 @@ export const versionRouter = createTRPCRouter({
   getAllReleases: publicProcedure
     .query(async () => {
       try {
-        const response = await fetchGitHubAPI('https://api.github.com/repos/community-scripts/ProxmoxVE-Local/releases');
+        const response = await fetchGitHubAPI('https://api.github.com/repos/mrinmaydhar/ProxmoxVE-Local/releases');
         
         if (!response.ok) {
           throw new Error(`GitHub API error: ${response.status}`);

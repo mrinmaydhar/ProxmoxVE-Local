@@ -9,7 +9,7 @@
   "updateable": false,
   "privileged": false,
   "interface_port": null,
-  "documentation": "https://github.com/community-scripts/ProxmoxVE/discussions/805",
+  "documentation": "https://github.com/mrinmaydhar/ProxmoxVE/discussions/805",
   "website": null,
   "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/linuxcontainers.webp",
   "config_path": "",
@@ -41,5 +41,5 @@
       "type": "warning"
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

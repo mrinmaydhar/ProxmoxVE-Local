@@ -6,8 +6,8 @@ class RepositoryService {
    * Initialize default repositories if they don't exist
    */
   async initializeDefaultRepositories() {
-    const mainRepoUrl = 'https://github.com/community-scripts/ProxmoxVE';
-    const devRepoUrl = 'https://github.com/community-scripts/ProxmoxVED';
+    const mainRepoUrl = 'https://github.com/mrinmaydhar/ProxmoxVE';
+    const devRepoUrl = 'https://github.com/mrinmaydhar/ProxmoxVED';
 
     // Check if repositories already exist
     const existingRepos = await prisma.repository.findMany({

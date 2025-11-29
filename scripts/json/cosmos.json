@@ -38,5 +38,5 @@
       "text": "The file `/etc/sysconfig/CosmosCloud` is optional. If you need custom settings, you can create it yourself."
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

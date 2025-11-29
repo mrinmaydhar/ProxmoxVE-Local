@@ -80,7 +80,7 @@ For better isolation and security, you can run PVE Scripts Local inside a Debian
 #### Step 1: Create Debian LXC Container
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/debian.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mrinmaydhar/ProxmoxVE/main/ct/debian.sh)"
 ```
 
 #### Step 2: Install Dependencies in Container
@@ -99,7 +99,7 @@ apt install -y nodejs
 #### Step 3: Clone and Setup Application
 ```bash
 # Clone the repository
-git clone https://github.com/community-scripts/ProxmoxVE-Local.git /opt/PVESciptslocal
+git clone https://github.com/mrinmaydhar/ProxmoxVE-Local.git /opt/PVESciptslocal
 cd PVESciptslocal
 
 # Install dependencies and build
@@ -130,7 +130,7 @@ npm start
 This creates the LXC and installs the APP for you.
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pve-scripts-local.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mrinmaydhar/ProxmoxVE/main/ct/pve-scripts-local.sh)"
 ```
 
 ## 🎯 Usage

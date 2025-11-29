@@ -800,7 +800,7 @@ export function HelpModal({
                     <strong>Main Repository (ProxmoxVE):</strong> The primary
                     repository at{" "}
                     <code className="bg-muted rounded px-1">
-                      github.com/community-scripts/ProxmoxVE
+                      github.com/mrinmaydhar/ProxmoxVE
                     </code>
                     . This is enabled by default and contains stable,
                     production-ready scripts. This repository cannot be deleted.
@@ -809,7 +809,7 @@ export function HelpModal({
                     <strong>Dev Repository (ProxmoxVED):</strong> The
                     development/testing repository at{" "}
                     <code className="bg-muted rounded px-1">
-                      github.com/community-scripts/ProxmoxVED
+                      github.com/mrinmaydhar/ProxmoxVED
                     </code>
                     . This is disabled by default and contains experimental or
                     in-development scripts. This repository cannot be deleted.

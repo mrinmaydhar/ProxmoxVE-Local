@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         ## ⚠️ **IMPORTANT - READ FIRST**  
-        - 🔍 **Search first:** Before submitting, check if the issue has already been reported or resolved in [closed issues](https://github.com/community-scripts/ProxmoxVE-Local/issues?q=is%3Aissue+is%3Aclosed). If found, comment on that issue instead of creating a new one.  
+        - 🔍 **Search first:** Before submitting, check if the issue has already been reported or resolved in [closed issues](https://github.com/mrinmaydhar/ProxmoxVE-Local/issues?q=is%3Aissue+is%3Aclosed). If found, comment on that issue instead of creating a new one.  
         Thank you for taking the time to report an issue! Please provide as much detail as possible to help us address the problem efficiently.  
 
      

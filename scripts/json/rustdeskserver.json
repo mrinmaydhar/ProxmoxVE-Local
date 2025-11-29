@@ -44,7 +44,7 @@
   },
   "notes": [
     {
-      "text": "Check our configuration guide for help: `https://github.com/community-scripts/ProxmoxVE/discussions/2388`",
+      "text": "Check our configuration guide for help: `https://github.com/mrinmaydhar/ProxmoxVE/discussions/2388`",
       "type": "info"
     },
     {
@@ -56,5 +56,5 @@
       "type": "info"
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

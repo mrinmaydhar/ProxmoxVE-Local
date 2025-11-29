@@ -44,9 +44,9 @@
   },
   "notes": [
     {
-      "text": "You can find the post-install guide here: `https://github.com/community-scripts/ProxmoxVE/discussions/410`",
+      "text": "You can find the post-install guide here: `https://github.com/mrinmaydhar/ProxmoxVE/discussions/410`",
       "type": "info"
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

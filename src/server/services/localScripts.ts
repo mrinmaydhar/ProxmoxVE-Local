@@ -111,7 +111,7 @@ export class LocalScriptsService {
           
           // Set repository_url to found repo or default to main repo
           const { env } = await import('~/env.js');
-          script.repository_url = foundRepo ?? env.REPO_URL ?? 'https://github.com/community-scripts/ProxmoxVE';
+          script.repository_url = foundRepo ?? env.REPO_URL ?? 'https://github.com/mrinmaydhar/ProxmoxVE';
           
           // Update the JSON file with the repository_url for future loads
           try {

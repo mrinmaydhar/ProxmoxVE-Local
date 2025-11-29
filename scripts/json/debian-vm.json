@@ -37,9 +37,9 @@
       "type": "info"
     },
     {
-      "text": "After installation, checkout: ´https://github.com/community-scripts/ProxmoxVE/discussions/836´ for useful Debian commands",
+      "text": "After installation, checkout: ´https://github.com/mrinmaydhar/ProxmoxVE/discussions/836´ for useful Debian commands",
       "type": "info"
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

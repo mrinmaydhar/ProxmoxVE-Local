@@ -52,5 +52,5 @@
       "text": "`htpasswd -b -B /opt/login.pwd newuser newuserpassword` to add more users."
     }
   ],
-  "repository_url": "https://github.com/community-scripts/ProxmoxVE"
+  "repository_url": "https://github.com/mrinmaydhar/ProxmoxVE"
 }

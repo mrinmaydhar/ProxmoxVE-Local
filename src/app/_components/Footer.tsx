@@ -47,7 +47,7 @@ export function Footer({ onOpenReleaseNotes }: FooterProps) {
               className="h-auto p-2 text-xs hover:text-foreground"
             >
               <a
-                href="https://github.com/community-scripts/ProxmoxVE-Local"
+                href="https://github.com/mrinmaydhar/ProxmoxVE-Local"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1"
