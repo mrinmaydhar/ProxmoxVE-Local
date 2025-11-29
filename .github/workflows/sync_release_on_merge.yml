@@ -1,0 +1,51 @@
+name: Sync Release on Merge
+
+# This triggers immediately when you click "Sync Fork" (which pushes to main)
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows you to run this manually if needed
+
+permissions:
+  contents: write
+
+jobs:
+  replicate-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Fetch and Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPSTREAM_REPO: "community-scripts/ProxmoxVE-Local"
+        run: |
+          # 1. Get Latest Release Data from Parent Repo
+          echo "Fetching latest release info from $UPSTREAM_REPO..."
+          UPSTREAM_JSON=$(gh api repos/$UPSTREAM_REPO/releases/latest)
+          
+          TAG_NAME=$(echo "$UPSTREAM_JSON" | jq -r .tag_name)
+          RELEASE_NAME=$(echo "$UPSTREAM_JSON" | jq -r .name)
+          RELEASE_BODY=$(echo "$UPSTREAM_JSON" | jq -r .body)
+
+          echo "Latest Upstream Tag: $TAG_NAME"
+
+          # 2. Check if this release already exists in YOUR fork
+          if gh release view "$TAG_NAME" > /dev/null 2>&1; then
+            echo "✅ Release $TAG_NAME already exists in your fork. No action needed."
+            exit 0
+          fi
+
+          # 3. If it doesn't exist, create it
+          echo "🚀 New release detected. Creating $TAG_NAME in your fork..."
+          
+          # Save release notes to a file to handle multi-line text safely
+          echo "$RELEASE_BODY" > release_notes.md
+
+          # Create the release targeting the 'main' branch you just synced
+          gh release create "$TAG_NAME" \
+            --title "$RELEASE_NAME" \
+            --notes-file release_notes.md \
+            --target main
